@@ -5,16 +5,20 @@ Deployment Testing Your Favourite Applications
 ### The instance Trial from Aliyun
 
 ###### 1.Setup git configration
-1 git config --global user.name "Trial"
 
-2 git config --global user.email "mygithublab@126.com"
-
-3 git config --global color.ui true
-
-4 git config --global push.default simple
-
-Or run gitconf.sh script
+Run gitconf.sh script
 
 ###### 2.Install docker 
 
-Run docker-installer.sh script
+Run docker-installer.sh script dockerconf.sh
+
+### Port design
+
+10010~10050 for Application; port+1 for SSH
+10001->8080 10002->50000 for Jenkins
+10086->80 10087->22 for Nagios
+
+###### 3.Create Jankins container
+
+Run jenkins-container.sh
+
