@@ -2,9 +2,9 @@
 
 Deployment Testing Your Favourite Applications
 
-## The instance Trial from Aliyun
+### The instance Trial from Aliyun
 
-## 1.Setup git configration
+###### 1.Setup git configration
 1 git config --global user.name "Trial"
 
 2 git config --global user.email "mygithublab@126.com"
@@ -15,6 +15,6 @@ Deployment Testing Your Favourite Applications
 
 Or run gitconf.sh script
 
-## 2.Install docker 
+###### 2.Install docker 
 
 Run docker-installer.sh script
