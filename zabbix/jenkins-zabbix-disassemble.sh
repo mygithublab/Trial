@@ -49,3 +49,8 @@ docker run --name zabbix-web-nginx-mysql -t \
       --restart=always \
       -d zabbix/zabbix-web-nginx-mysql:latest
 
+#Setup timezone to Shanghai
+
+docker cp /usr/share/zoneinfo/Asia/Shanghai zabbix-server-mysql:/etc/localtime
+
+
