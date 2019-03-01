@@ -54,3 +54,8 @@ docker run --name zabbix-web-nginx-mysql -t \
 docker cp /usr/share/zoneinfo/Asia/Shanghai zabbix-server-mysql:/etc/localtime
 
 
+#Start Zabbix agnet
+
+docker run --name zabbix-agent --link zabbix-server-mysql:zabbix-server --privileged -d --restart=always zabbix/zabbix-agent:alpine-4.0-latest
+
+
