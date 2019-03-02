@@ -1,2 +1,4 @@
 
 # when start zabbix-web-nginx-mysql docker container add parameter to set up time zone:   -e PHP_TZ="some-timezone"  e.g. -e PHP_TZ="Asia/Shanghai"
+
+# or manually setup time zone in running container: setup Asia/Shanghai in container zabbix-web-nginx-mysql; and copy docker cp /usr/share/zoneinfo/Asia/Shanghai zabbix-server-mysql:/etc/localtime
