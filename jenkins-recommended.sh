@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run -p 8080:8080 -p 50000:50000 --restart=alwarys jenkins
+docker run -itd --name jenkins -p 8080:8080 -p 50000:50000 --restart=alwarys jenkins
