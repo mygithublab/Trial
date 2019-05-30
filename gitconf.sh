@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git config --global user.name "Trial"
+git config --global user.name "mygithublab"
 
 git config --global user.email "mygithublab@126.com"
 
