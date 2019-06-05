@@ -45,7 +45,7 @@ docker run --name zabbix-web-nginx-mysql -t \
       -e PHP_TZ="Asia/Shanghai" \
       --link mysql-server:mysql \
       --link zabbix-server-mysql:zabbix-server \
-      -p 80:80 \
+      -p 10000:80 \
       --restart=always \
       -d zabbix/zabbix-web-nginx-mysql:latest
 
